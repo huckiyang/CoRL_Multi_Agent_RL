@@ -6,7 +6,7 @@ Tennis Environment in Unity
 For this project, we train a pair of agents to play tennis.
 
 <p align="center">
-	<img src="images/tennis_gif.gif" width=50% height=50%>
+	<img src="image/unity.gif" width=60% height=60%>
 </p>
 
 ## Problem Statement 
@@ -20,13 +20,13 @@ The task is episodic. In order to solve
 the environment, one of the agent must get an average score of +0.5 over 100 consecutive
 episodes.
 
-## Files 
-- `Tennis.ipynb`: Notebook used to control and train the agent 
-- `DDPGAgents.py`: Create an DDPGAgents class that interacts with and learns from the environment 
-- `ReplayBuffer.py`: Replay Buffer class to store the experiences
-- `OUNoise.py`: Ornstein Uhlenbeck noise for the actor to improve exploration
-- `model.py`: Actor and Critic classes  
-- `config.json`: Configuration file to store variables and paths
-- `utils.py`: Helper functions 
-- `report.pdf`: Technical report
+### Instructions
+
+See the main file `Tennis.ipynb` to get an introduction to the environment and follow the steps to solving the environment. The main classes are defined in the file `MADDPG_agent.py`.
+
+### Approach and solution
+
+The reinforcement learning approach we use in this project is called Multi Agent Deep Deterministic Policy Gradients (MADDPG). see this [paper](https://papers.nips.cc/paper/7217-multi-agent-actor-critic-for-mixed-cooperative-competitive-environments.pdf). In this model every agent itself is modeled as a Deep Deterministic Policy Gradient (DDPG) agent (see this [paper](https://arxiv.org/pdf/1509.02971.pdf)) where, however, some information is shared between the agents.
+
+
 
