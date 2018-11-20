@@ -20,14 +20,6 @@ The task is episodic. In order to solve
 the environment, one of the agent must get an average score of +0.5 over 100 consecutive
 episodes.
 
-### Instructions
-
-See the main file `Tennis.ipynb` to get an introduction to the environment and follow the steps to solving the environment. The main classes are defined in the file `MADDPG_agent.py`.
-
-### Approach and solution
-
-The reinforcement learning approach we use in this project is called Multi Agent Deep Deterministic Policy Gradients (MADDPG). see this [paper](https://papers.nips.cc/paper/7217-multi-agent-actor-critic-for-mixed-cooperative-competitive-environments.pdf). In this model every agent itself is modeled as a Deep Deterministic Policy Gradient (DDPG) agent (see this [paper](https://arxiv.org/pdf/1509.02971.pdf)) where, however, some information is shared between the agents.
-
 ### Workspace by Udacity 
 To set up your computer to run the python code in this repository, follow the instructions below.
 
@@ -57,3 +49,11 @@ To set up your computer to run the python code in this repository, follow the in
 6. Create an IPython kernel for the drlnd environment.
 
     e.g. `python -m ipykernel install --user --name drlnd --display-name "drlnd"`
+    
+### Instructions
+
+See the main file `Tennis.ipynb` to get an introduction to the environment and follow the steps to solving the environment. The main classes are defined in the file `MADDPG_agent.py`.
+
+### Approach and solution
+
+The reinforcement learning approach we use in this project is called Multi Agent Deep Deterministic Policy Gradients (MADDPG). see this [paper](https://papers.nips.cc/paper/7217-multi-agent-actor-critic-for-mixed-cooperative-competitive-environments.pdf). In this model every agent itself is modeled as a Deep Deterministic Policy Gradient (DDPG) agent (see this [paper](https://arxiv.org/pdf/1509.02971.pdf)) where, however, some information is shared between the agents.
