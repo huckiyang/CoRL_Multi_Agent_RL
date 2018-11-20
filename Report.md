@@ -8,9 +8,17 @@ In this project, I used Deep Determinstic Policy Gradient (DDPG) for a off-polic
 
 ### Results Discussion 
 
-The actor-network directly outputs action which agent will take and use without any additional clipping, normalizing or preprocessing. The neural network gives an output related to its action space(=4). The hidden size parameters were chosen after careful tuning. I did experiments with 256, 512, and 1024 nodes. This tuning part of the experiment was really trickly. The experiment got a final success at the epsidoes = 4120 with 512 nodes. It took around two hours on the working space. 
-`Environment solved in 4120 episodes!	Average Score: 0.451`
+The actor-network directly outputs action which agent will take and use without any additional clipping, normalizing or preprocessing. The neural network gives an output related to its action space(=4). The hidden size parameters were chosen after careful tuning. I did experiments with 256, 512, and 1024 nodes. This tuning part of the experiment was really trickly. 
 
+## [Solved] 512 - the environment solved at 3214 episode
+![](/image/512_done.png)
+
+
+The experiment got a final success at the epsidoes = 3214 with 512 nodes. It took around two hours on the working space. 
+`Environment solved in 3214 episodes!	Average Score: 0.501`
+
+
+## [Failed] 1024 layers - need to stop the training around 1900 episdoes, where was a crash after 2100 episodes... 
 ![](/image/1024_layers.png)
 
 A classical Failure case with 1024 hidden nodes
