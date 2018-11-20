@@ -11,7 +11,9 @@ In this project, I used Deep Determinstic Policy Gradient (DDPG) for a off-polic
 The actor-network directly outputs action which agent will take and use without any additional clipping, normalizing or preprocessing. The neural network gives an output related to its action space(=4). The hidden size parameters were chosen after careful tuning. I did experiments with 256, 512, and 1024 nodes. This tuning part of the experiment was really trickly. 
 
 ## [Solved] 512 - the environment solved at 3214 episode
-![](/image/512_done.png)
+<p align="center">
+	<img src="/image/512_done.png" width=70% height=70%>
+</p>
 
 
 The experiment got a final success at the epsidoes = 3214 with 512 nodes. It took around two hours on the working space. 
@@ -19,7 +21,9 @@ The experiment got a final success at the epsidoes = 3214 with 512 nodes. It too
 
 
 ## [Failed] 1024 layers - need to stop the training around 1900 episdoes, where was a crash after 2100 episodes... 
-![](/image/1024_layers.png)
+<p align="center">
+	<img src="/image/1024_layers.png" width=60% height=60%>
+</p>
 
 A classical Failure case with 1024 hidden nodes
 `Episode 200	Average Score: 0.009
@@ -33,6 +37,9 @@ Episode 1600	Average Score: 0.156
 Episode 1800	Average Score: 0.158
 Episode 2000	Average Score: 0.390
 Episode 2120	Average Score: 0.085`
+
+### Model Weights saved at the `/saved` folder 
+see the path files 
 
 #### Denosie during the exploration 
 ![](https://github.com/huckiyang/Udacity_DDGD_Control/blob/master/image/ou_process.png)
