@@ -1,4 +1,4 @@
-# Udacity_Multi_Agent_RL
+# CoRL_Multi_Agent_RL
 Tennis Environment in Unity 
 # Project : Collaboration and Competition 
 
